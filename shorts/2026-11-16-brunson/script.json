@@ -1,0 +1,19 @@
+{
+  "voice": "am_michael",
+  "speed": 1.1,
+  "title": "Dallas Let Him Walk… Now He's a Finals MVP 👑 #shorts",
+  "description": "Too small. Too slow. A second-round pick, number 33. Dallas let Jalen Brunson go in 2022… and in June 2026 he dropped 45 in Game 5 against the Spurs to win the Knicks their first title since 1973 👑 Unanimous Finals MVP, against the same franchise that beat his dad's Knicks in 1999.\n\nWas letting Brunson go the worst move in Mavs history? 👇\n\n#shorts #jalenbrunson #knicks #nba #nbafinals #basketball #mavericks #underdog #nbahighlights",
+  "tags": ["Jalen Brunson", "Knicks", "NBA Finals 2026", "Finals MVP", "Knicks champions", "Mavericks", "Brunson 45 points", "NBA shorts", "Hoops Without Borders"],
+  "segments": [
+    {"vo": "Dallas let him walk. Four years later, he won New York its first title in fifty-three years.", "lines": ["DALLAS", "LET HIM WALK"], "bg": "red"},
+    {"vo": "Jalen Brunson. Too small. Too slow. A second-round pick, number thirty-three.", "lines": ["TOO SMALL", "TOO SLOW", "PICK #33"], "bg": "dark"},
+    {"vo": "In twenty twenty-two, he left Dallas for the Knicks.", "lines": ["2022", "DALLAS → NEW YORK"], "bg": "blue"},
+    {"vo": "Then he signed an extension worth way less than he could have gotten. As much as one hundred thirteen million dollars, left on the table.", "big": "$113M", "lines": ["LEFT ON THE TABLE"], "bg": "gold"},
+    {"vo": "June twenty twenty-six. The NBA Finals. Against the Spurs. The same team that beat his dad's Knicks in ninety-nine.", "lines": ["2026 FINALS", "VS SPURS", "1999: THEY BEAT HIS DAD"], "bg": "dark"},
+    {"vo": "Game five. Down double digits again.", "lines": ["GAME 5", "DOWN DOUBLE DIGITS"], "bg": "dark", "mute_beat": true},
+    {"vo": "Brunson drops forty-five.", "big": "45", "lines": ["POINTS"], "bg": "red"},
+    {"vo": "Knicks win. First title since nineteen seventy-three. Finals MVP. Every single vote.", "lines": ["CHAMPIONS", "FIRST SINCE 1973", "FINALS MVP 11/11"], "bg": "gold"},
+    {"vo": "Too small? He's the king of New York.", "lines": ["TOO SMALL?", "KING OF NEW YORK"], "bg": "orange"},
+    {"vo": "Was letting him go the worst move in Mavs history? Tell me below, and follow for more.", "lines": ["WORST MOVE", "IN MAVS HISTORY?"], "bg": "dark"}
+  ]
+}
