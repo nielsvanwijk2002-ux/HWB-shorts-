@@ -110,6 +110,30 @@ def bg_image(kind, rng):
     return img
 
 
+class ClipReader:
+    """Streams a background clip at 540x960, darkened + soft blur; loops if too short."""
+    def __init__(self, path, start, dur):
+        self.w, self.h = 540, 960
+        vf = (f"scale={self.w}:{self.h}:force_original_aspect_ratio=increase,crop={self.w}:{self.h},"
+              f"fps={FPS},boxblur=2:1,eq=brightness=-0.10:saturation=0.85:contrast=1.05")
+        self.p = subprocess.Popen(["ffmpeg", "-loglevel", "error", "-stream_loop", "-1", "-ss", str(start), "-i", path,
+                                   "-t", str(dur + 1), "-an", "-vf", vf, "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
+                                  stdout=subprocess.PIPE)
+        self.last = None
+
+    def frame(self):
+        b = self.p.stdout.read(self.w * self.h * 3)
+        if len(b) == self.w * self.h * 3:
+            self.last = Image.frombytes("RGB", (self.w, self.h), b).resize((W, H), Image.BILINEAR)
+        return self.last
+
+    def close(self):
+        try:
+            self.p.kill()
+        except Exception:
+            pass
+
+
 def fit_size(text, maxw, start):
     s = start
     while s > 40:
@@ -216,6 +240,8 @@ def main(script_path, out_path):
     ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
                            "-i", wav, "-c:v", "libx264", "-preset", "veryfast", "-crf", "25", "-pix_fmt", "yuv420p",
                            "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", out_path], stdin=subprocess.PIPE)
+    clips_list = spec.get("clips", [])
+    readers, cur_si = {}, -1
     nf = int(math.ceil(total * FPS))
     for fi in range(nf):
         t = fi / FPS
@@ -230,6 +256,18 @@ def main(script_path, out_path):
         z = 1.0 + 0.04 * (tl / max(durs[si], 0.1))
         bw, bh = int(W * z), int(H * z)
         frame = bgs[si].resize((bw, bh)).crop(((bw - W) // 2, (bh - H) // 2, (bw - W) // 2 + W, (bh - H) // 2 + H))
+        clip = s.get("clip") if "clip" in s else (clips_list[si % len(clips_list)] if clips_list else None)
+        if clip:
+            if si != cur_si:
+                for r in readers.values():
+                    r.close()
+                cpath = clip["path"] if isinstance(clip, dict) else clip
+                cstart = clip.get("start", 0) if isinstance(clip, dict) else 0
+                readers = {si: ClipReader(cpath, cstart, durs[si])}
+                cur_si = si
+            cf = readers[si].frame()
+            if cf is not None:
+                frame = Image.blend(cf, frame, spec.get("tint", 0.42))
         draw_lines(frame, s.get("lines", []), tl, accent, s.get("big"))
         draw_caption(frame, s["vo"].replace("…", " ").split(), tl, durs[si])
         brand(frame)
@@ -245,6 +283,8 @@ def main(script_path, out_path):
         arr = np.clip(arr, 0, 255).astype(np.uint8)
         arr[H - 14:, : int(W * t / total)] = RED
         ff.stdin.write(arr.tobytes())
+    for r in readers.values():
+        r.close()
     ff.stdin.close()
     ff.wait()
     print(json.dumps({"out": out_path, "duration": round(total, 2)}))

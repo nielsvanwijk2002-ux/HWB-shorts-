@@ -14,6 +14,11 @@ Upload: direct openbaar (keuze eigenaar). Stem: Kokoro am_michael (gratis). Geen
 4. Feitencheck: elk getal/datum via WebSearch uit ≥1 betrouwbare bron (ESPN, NBA.com, AP, Basketball-Reference). Twijfel → weglaten.
 5. Schrijf `shorts/<datum>-<slug>/script.json` (zie voorbeeld). 110–140 woorden, hook in zin 1, eindigen met een vraag + "follow for more".
    Titel: ≤60 tekens, hook + emoji + #shorts. Beschrijving met vraag + hashtags.
+5b. ACHTERGROND-HIGHLIGHTS (keuze eigenaar, op eigen risico): clips staan op de Mac in /Users/nielsvanwijk/Documents/HWB highlights.
+   - device_list_dir op die map; kies clips waarvan de bestandsnaam bij de speler/het onderwerp past (bv. brunson-1.mp4), anders algemene clips; liefst een andere clip per segment.
+   - device_stage_files → ze komen in /mnt/user-data/uploads/HWB highlights/… Zet in script.json: "clips": ["<stagedPath1>", "<stagedPath2>", ...] (render.py wisselt per segment; per segment overschrijven kan met "clip": {"path":..., "start": sec}).
+   - Geen clips in de map: render zonder clips (grafisch) en meld in je eindbericht dat de map leeg is.
+   - Download zelf NOOIT video's van YouTube of andere sites; alleen clips uit deze map.
 6. `python3 render.py shorts/.../script.json shorts/.../short.mp4` (≈2 min). Controleer 4 frames visueel.
 7. Commit + push naar `main`. Raw-URL: https://raw.githubusercontent.com/nielsvanwijk2002-ux/HWB-shorts-/main/shorts/<map>/short.mp4
 8. Upload in de built-in browser (studio.youtube.com/channel/UC1hu7r8SS20MVl1QT6hvcFw/videos/short):
