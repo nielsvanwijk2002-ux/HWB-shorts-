@@ -54,12 +54,55 @@
    "slug": "2026-11-16-brunson",
    "topic": "Jalen Brunson – Dallas let him walk, 2026 Finals MVP",
    "title": "Dallas Let Him Walk… Now He's a Finals MVP 👑 #shorts",
-   "url": "https://youtube.com/shorts/9nkzL9J5h7w"
+   "url": "https://youtube.com/shorts/9nkzL9J5h7w",
+   "status": "not_found",
+   "views_2026-11-17": null,
+   "note": "Niet te vinden in Studio op 17-11 (Shorts-lijst 11 items; video-ID geeft \"Er is iets misgegaan\") – mogelijk verwijderd of nooit gepubliceerd."
+  },
+  {
+   "date": "2026-11-16",
+   "slug": "2026-11-16-trae-young",
+   "topic": "Trae Young 0 punten, einde 511-wedstrijden-reeks",
+   "title": "Trae Young's 511-game streak ends with 0 points 😳 #nba #basketball #sports",
+   "url": null,
+   "made_by": "owner",
+   "status": "public",
+   "views_2026-11-17": 1542,
+   "avg_pct_viewed_first_18h": 0.56,
+   "likes_first_18h": 15
   }
  ],
  "learnings": [
-  "Bekende ster + underdog/bijnaam/controverse + emoji presteert 3-4x beter dan Europese geschiedenis.",
-  "Recente wedstrijdmomenten (laatste 48 u) zijn de sterkste onderwerpen (Wemby-block 5,3K).",
+  "Nieuws van gisteren + absoluut getal/record in de titel werkt: Trae Young '511-game streak ends with 0 points 😳' haalde 1,5K in <18 u met 56% bekeken. Upload binnen 24 u na de wedstrijd.",
+  "Sengun 43 (60 views) flopte ondanks record: titel zonder emoji/hook, droge statistiek-opsomming en minder bekende ster. Altijd emoji + spanningshook ('ends', 'UNTOUCHABLE', 'OVERRATED') en een topnaam (Curry, Wemby, Luka, Trae).",
+  "Bijnaam/underdog-verhalen van sterren blijven de top (Wemby 5,3K, Curry 4,9K); Europese historie blijft ±1,3K → max 2× per week. 99% nieuwe kijkers en 14 abonnees: eindig met een duidelijke serie-belofte ('daily NBA moment – follow') om kijkers te binden.",
   "Wacht altijd op de YouTube-controle (~5 min) voor publiceren."
+ ],
+ "snapshots": [
+  {
+   "date": "2026-11-17",
+   "subs": 14,
+   "subs_28d": "+16 (Shorts-tab) / +13 (overzicht)",
+   "views_28d": 21400,
+   "stayed_to_watch": 0.642,
+   "shorts_feed_share": 0.93,
+   "watch_hours_28d": 128.1,
+   "views_48h": 1717,
+   "new_viewers_share": 0.99,
+   "note": "Analytics loopt t/m 15-11 (vertraging); abonneetotaal nog 14.",
+   "shorts": {
+    "Trae Young 511-game streak (16-11)": 1542,
+    "Sengun 43 vs Jazz (15-11)": 60,
+    "Luka MVP? (12-11)": 1578,
+    "OVERRATED Haliburton (9-11)": 1735,
+    "Baby-Faced Assassin Curry (5-11)": 4905,
+    "Hillbilly Kobe Reaves (3-11)": 1901,
+    "Wemby UNTOUCHABLE (1-11)": 5353,
+    "Giannis (30-10)": 1290,
+    "Jokic Taco Bell (28-10)": 1341,
+    "Hezonja (26-10)": 1533,
+    "Tony Parker (25-10)": 1271
+   }
+  }
  ]
 }
