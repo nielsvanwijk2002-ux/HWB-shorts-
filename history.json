@@ -57,26 +57,40 @@
    "url": "https://youtube.com/shorts/9nkzL9J5h7w",
    "status": "not_found",
    "views_2026-11-17": null,
-   "note": "Niet te vinden in Studio op 17-11 (Shorts-lijst 11 items; video-ID geeft \"Er is iets misgegaan\") – mogelijk verwijderd of nooit gepubliceerd."
+   "note": "Niet te vinden in Studio op 17-11 (Shorts-lijst 11 items; video-ID geeft \"Er is iets misgegaan\") – mogelijk verwijderd of nooit gepubliceerd. 20-11: nog steeds niet in Studio (12 Shorts).",
+   "views_2026-11-20": null
   },
   {
    "date": "2026-11-16",
    "slug": "2026-11-16-trae-young",
    "topic": "Trae Young 0 punten, einde 511-wedstrijden-reeks",
    "title": "Trae Young's 511-game streak ends with 0 points 😳 #nba #basketball #sports",
-   "url": null,
+   "url": "https://youtube.com/shorts/B2Iw4AannIg",
    "made_by": "owner",
    "status": "public",
    "views_2026-11-17": 1542,
    "avg_pct_viewed_first_18h": 0.56,
-   "likes_first_18h": 15
+   "likes_first_18h": 15,
+   "views_2026-11-20": 1746
+  },
+  {
+   "date": "2026-11-17",
+   "slug": "2026-11-17-anthony-edwards",
+   "topic": "Anthony Edwards – van football-kid tot #1 pick, Game 7-comeback",
+   "title": "Anthony Edwards: From Football Kid to #1 Pick 😳 #shorts #nbahighlights #anthonyedwards",
+   "url": "https://youtube.com/shorts/_KhE54ydwDc",
+   "made_by": "owner?",
+   "status": "public",
+   "views_2026-11-20": 1503,
+   "avg_pct_viewed_first_3d": 0.69,
+   "likes_first_3d": 30
   }
  ],
  "learnings": [
-  "Nieuws van gisteren + absoluut getal/record in de titel werkt: Trae Young '511-game streak ends with 0 points 😳' haalde 1,5K in <18 u met 56% bekeken. Upload binnen 24 u na de wedstrijd.",
-  "Sengun 43 (60 views) flopte ondanks record: titel zonder emoji/hook, droge statistiek-opsomming en minder bekende ster. Altijd emoji + spanningshook ('ends', 'UNTOUCHABLE', 'OVERRATED') en een topnaam (Curry, Wemby, Luka, Trae).",
-  "Bijnaam/underdog-verhalen van sterren blijven de top (Wemby 5,3K, Curry 4,9K); Europese historie blijft ±1,3K → max 2× per week. 99% nieuwe kijkers en 14 abonnees: eindig met een duidelijke serie-belofte ('daily NBA moment – follow') om kijkers te binden.",
-  "Wacht altijd op de YouTube-controle (~5 min) voor publiceren."
+  "Elke Short met topnaam + emoji-hook landt op ~1,5–1,7K (Trae 1,7K, Edwards 1,5K, Haliburton 1,7K); de doorbraken (Wemby 5,4K, Curry 4,9K) hadden een bijnaam/kleinering IN de titel ('UNTOUCHABLE', 'Baby-Faced Assassin'). Zet altijd een bijnaam of 'ze lachten hem uit'-frame vooraan in titel én zin 1.",
+  "Underdog-origin werkt voor retentie: Edwards 'Football Kid to #1 Pick' haalde 69% gem. bekeken (hoogste gemeten) en 30 likes in 3 dagen. Opbouw: tegenslag in zin 1 → snelle cijferreeks → recent piekmoment → vraag.",
+  "Na 3 dagen zakt elke Short naar ~0 (48 u-weergaven nu 119, 99% nieuwe kijkers): het kanaal groeit alleen met DAGELIJKSE uploads. 3 dagen zonder upload (18–20-11) = vrijwel nul nieuwe views; liever een simpele grafische Short dan geen Short.",
+  "Sengun 43 (69 views) blijft de waarschuwing: droge stat-titel zonder emoji en een minder bekende ster flopt. Wacht altijd op de YouTube-controle (~5 min) voor publiceren."
  ],
  "snapshots": [
   {
@@ -102,6 +116,34 @@
     "Jokic Taco Bell (28-10)": 1341,
     "Hezonja (26-10)": 1533,
     "Tony Parker (25-10)": 1271
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "subs": 17,
+   "subs_28d": "+17 (overzicht) / +19 (Shorts-tab)",
+   "views_28d": 24600,
+   "stayed_to_watch": 0.637,
+   "shorts_feed_share": 0.92,
+   "search_share": 0.064,
+   "watch_hours_28d": 144.4,
+   "views_48h": 119,
+   "new_viewers_share": 0.99,
+   "monthly_audience": 13300,
+   "note": "Geen uploads op 18, 19 en 20-11 (geen pending item, geen commits) – dagelijkse taak lijkt stil te liggen. Analytics t/m 19-11.",
+   "shorts": {
+    "Anthony Edwards football kid (17-11)": 1503,
+    "Trae Young 511-game streak (16-11)": 1746,
+    "Sengun 43 vs Jazz (15-11)": 69,
+    "Luka MVP? (12-11)": 1578,
+    "OVERRATED Haliburton (9-11)": 1737,
+    "Baby-Faced Assassin Curry (5-11)": 4908,
+    "Hillbilly Kobe Reaves (3-11)": 1904,
+    "Wemby UNTOUCHABLE (1-11)": 5355,
+    "Giannis (30-10)": 1291,
+    "Jokic Taco Bell (28-10)": 1344,
+    "Hezonja (26-10)": 1542,
+    "Tony Parker (25-10)": 1274
    }
   }
  ]
